@@ -8,4 +8,4 @@
 - Método findViewById() da classe Activity
 - Utilizar parâmetros como "View clickedView" quando se declara um método para ser executado em resposta de um evento de clique
 
-![Screenshot](firstProjectICMS.png)
+![Screenshot](firstProjectICMSimg.png)
