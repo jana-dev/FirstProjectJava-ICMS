@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="ICMS"
+            android:scaleType="centerCrop"
+            android:src="@drawable/images" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:theme="@style/defaultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digite o Estado: "
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado (sigla)" />
+
+            <TextView
+                android:theme="@style/defaultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digite o valor: "
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#47C1A8">
+
+            <TextView
+                android:textAlignment="center"
+                android:theme="@style/defaultText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Porcentagem do ICMS: "
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textViewICMS"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="%"
+                android:textSize="28sp" />
+            <TextView
+                android:textAlignment="center"
+                android:theme="@style/defaultText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Valor total da mercadoria:"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textViewValorTotal"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:text="R$ 0,00"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:theme="@style/defaultText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:onClick="calcular"
+                android:text="Calcular">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
